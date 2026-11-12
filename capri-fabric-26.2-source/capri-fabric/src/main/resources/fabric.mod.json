@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "capri",
+  "version": "${version}",
+  "name": "Capri",
+  "description": "Capri rides along: she watches your screen and talks to you. Client-side only.",
+  "authors": ["you"],
+  "license": "All-Rights-Reserved",
+  "icon": "assets/capri/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.capri.CapriMod"]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}

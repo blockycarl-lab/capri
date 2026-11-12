@@ -1,0 +1,4 @@
+{
+  "blip":   { "sounds": ["capri:blip_1", "capri:blip_2", "capri:blip_3", "capri:blip_4"] },
+  "appear": { "sounds": ["capri:appear"] }
+}
