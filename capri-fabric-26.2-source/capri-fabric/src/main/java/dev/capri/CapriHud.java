@@ -1,6 +1,5 @@
 package dev.capri;
 
-import net.minecraft.Util;
 import net.minecraft.client.DeltaTracker;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;
@@ -39,7 +38,7 @@ public final class CapriHud {
     public void say(String t, String m) {
         text = t;
         mood = m;
-        shownAt = Util.getMillis();
+        shownAt = System.currentTimeMillis();
         fullAt = 0;
         lastBlip = 0;
         lines = null;
@@ -62,7 +61,7 @@ public final class CapriHud {
         Minecraft mc = Minecraft.getInstance();
         if (mc.player == null) return;
         Font font = mc.font;
-        long now = Util.getMillis();
+        long now = System.currentTimeMillis();
 
         boolean showText = !text.isEmpty() && (fullAt == 0 || now - fullAt < 5000L + text.length() * 50L);
 
