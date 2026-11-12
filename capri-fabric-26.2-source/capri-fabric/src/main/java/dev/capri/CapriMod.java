@@ -138,7 +138,7 @@ public final class CapriMod implements ClientModInitializer {
         String held = p.getMainHandItem().isEmpty() ? "nothing" : p.getMainHandItem().getHoverName().getString();
         return String.format("Host health %.0f/%.0f, food %d/20, holding %s, %s.",
                 p.getHealth(), p.getMaxHealth(), p.getFoodData().getFoodLevel(), held,
-                mc.screen != null ? "a menu is open" : "no menu open");
+                "playing");
     }
 
     /** Local-only chat line (never sent to the server). */
