@@ -2,6 +2,9 @@ name: Build Capri
 on:
   push:
   workflow_dispatch:
+defaults:
+  run:
+    working-directory: capri-fabric-26.2-source/capri-fabric
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -18,4 +21,4 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: capri-mod
-          path: build/libs/*.jar
+          path: capri-fabric-26.2-source/capri-fabric/build/libs/*.jar
